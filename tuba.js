@@ -58,14 +58,15 @@ function verifyCrops() {
           cropsComplete = true; messageElement.innerHTML = "";
           //clear previous
           //message or recommendation
-          testFormCompleteness(); i=8;
+          testFormCompleteness(); i = 8;
         }
-  if (i === 7) 
+      }
+  if (i === 7)
     {
     throw "Please select at least one crop.";
     }
   }
-  catch(message) {
+  catch (message) {
     cropsComplete = false; messageHeadElement.innerHTML = "";
     //remove any former recommendation heading
     messageElement.innerHTML = message;
